@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de Segurança Digital para a Terceira Idade</title>
+
+  <!-- Ligação com o arquivo CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Inputs para alternar modos via CSS -->
+  <input type="checkbox" id="toggle-contrast" class="accessibility-checkbox" aria-label="Alternar Alto Contraste">
+  <input type="checkbox" id="toggle-font" class="accessibility-checkbox" aria-label="Alternar Tamanho do Texto">
+
+  <div class="app-container">
+
+    <nav class="accessibility-bar" aria-label="Ferramentas de Acessibilidade">
+      <p>🛈 Acessibilidade Facilitada:</p>
+      <div class="controls-group">
+        <label for="toggle-font" class="btn-access btn-font" tabindex="0">
+          <span>🔍</span> Texto Maior
+        </label>
+        <label for="toggle-contrast" class="btn-access btn-contrast" tabindex="0">
+          <span>🎨</span> Alto Contraste
+        </label>
+      </div>
+    </nav>
+
+    <!-- 1. Banner de Início -->
+    <header class="hero-banner" id="inicio">
+      <div class="hero-content">
+        <span class="hero-badge">Portal Educativo e Seguro</span>
+        <h1>🛡️ Guia de Segurança Digital</h1>
+        <p>Aprenda a navegar na internet e usar o celular com total tranquilidade, autonomia e longe de golpes.</p>
+        
+        <!-- Botão de Ajuda Funcional -->
+        <a href="#emergencia" class="btn-help-hero" id="btn-socorro" onclick="ativarAlertaAjuda()">
+          🚨 Preciso de Ajuda Agora!
+        </a>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- Menu de Atalhos Rápidos -->
+      <nav class="quick-nav" aria-label="Menu de Atalhos">
+        <a href="#dicas-curtas" class="nav-card">
+          <svg viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+          3 Dicas Importantes
+        </a>
+        <a href="#como-saber-golpe" class="nav-card">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+          Como Saber se é Golpe?
+        </a>
+        <a href="#direitos-internet" class="nav-card">
+          <svg viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 5h-4v2h4V7zm0 4h-4v2h4v-2zm-6-4H8v2h2V7zm0 4H8v2h2v-2z"/></svg>
+          Seus Direitos
+        </a>
+        <a href="#emergencia" class="nav-card">
+          <svg viewBox="0 0 24 24"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+          Telefones Úteis
+        </a>
+      </nav>
+
+      <!-- 2. Seção: 3 Dicas Importantes -->
+      <section id="dicas-curtas" class="content-block">
+        <h2 class="section-title">💡 3 Dicas Importantes (Curtas e Simples)</h2>
+        
+        <div class="tips-grid">
+          <article class="tip-card">
+            <div class="tip-number">1</div>
+            <h3>Pare e Respire</h3>
+            <p>Os golpistas sempre criam clima de pressa ou ameaça. Se receber uma mensagem urgente pedindo dinheiro, não aja com pressa. Pare e pense com calma.</p>
+          </article>
+
+          <article class="tip-card">
+            <div class="tip-number">2</div>
+            <h3>Sua Senha é Segredo</h3>
+            <p>Nenhum funcionário de banco, nem mesmo o gerente, tem o direito de pedir sua senha bancária ou código de SMS. Guarde-os só para você.</p>
+          </article>
+
+          <article class="tip-card">
+            <div class="tip-number">3</div>
+            <h3>Confirme por Ligação</h3>
+            <p>Recebeu pedido de ajuda financeira no WhatsApp de um parente com "número novo"? Ligue de volta para o número original antigo para confirmar se é verdade.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4. Seção: Como saber se estou caindo em um golpe? -->
+      <section id="como-saber-golpe" class="content-block">
+        <h2 class="section-title">🚨 Como Saber se Estou Caindo em um Golpe?</h2>
+        <p style="margin-bottom: 20px;">Fique atento! Se algum atendimento ou mensagem tiver <strong>uma destas atitudes suspeitas</strong>, desconfie na hora:</p>
+
+        <div class="suspicious-box">
+          <div class="checklist-item">
+            <span class="checklist-icon">⚠️</span>
+            <div>
+              <strong>A pessoa exige urgência extrema:</strong>
+              <p>Exemplo: "Se não pagar nos próximos 15 minutos, sua conta ou aposentadoria será bloqueada."</p>
+            </div>
+          </div>
+
+          <div class="checklist-item">
+            <span class="checklist-icon">⚠️</span>
+            <div>
+              <strong>Pedem para transferir dinheiro para "proteger" sua conta:</strong>
+              <p>Bancos VERDADEIROS nunca pedem para você fazer um PIX de segurança para a conta de outra pessoa.</p>
+            </div>
+          </div>
+
+          <div class="checklist-item">
+            <span class="checklist-icon">⚠️</span>
+            <div>
+              <strong>Enviam um "link azul" estranho para clicar:</strong>
+              <p>Mensagens de SMS ou WhatsApp prometendo prêmios, cestas básicas ou devolução de dinheiro com um link para apertar.</p>
+            </div>
+          </div>
+
+          <div class="checklist-item">
+            <span class="checklist-icon">⚠️</span>
+            <div>
+              <strong>Dizem que um motoboy vai buscar seu cartão:</strong>
+              <p>Nenhum banco envia entregadores ou policiais para recolher seu cartão bancário em casa.</p>
+            </div>
+          </div>
+
+          <div class="checklist-item">
+            <span class="checklist-icon">⚠️</span>
+            <div>
+              <strong>Pedem para você instalar um aplicativo no celular:</strong>
+              <p>Golpistas costumam pedir para baixar aplicativos de "suporte remoto" para controlar seu telefone à distância.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Seção: Direitos na Internet -->
+      <section id="direitos-internet" class="content-block">
+        <h2 class="section-title">⚖️ Seus Direitos na Internet</h2>
+        <p style="margin-bottom: 20px;">Assim como na rua ou no comércio, você também possui direitos garantidos por lei no meio digital:</p>
+
+        <div class="rights-list">
+          <article class="right-item">
+            <h3>🔒 1. Direito à Privacidade de Dados (LGPD)</h3>
+            <p>Nenhuma empresa pode vender ou compartilhar seus dados pessoais (como CPF, telefone ou histórico) sem a sua autorização expressa.</p>
+          </article>
+
+          <article class="right-item">
+            <h3>🛍 2. Direito ao Arrependimento de Compras (7 Dias)</h3>
+            <p>Comprou algo pela internet e não gostou ou se arrependeu? Pelo Código de Defesa do Consumidor, você tem até 7 dias após receber o produto para cancelar e receber todo o seu dinheiro de volta.</p>
+          </article>
+
+          <article class="right-item">
+            <h3>🏦 3. Direito à Segurança Bancária</h3>
+            <p>Os bancos têm o dever de proteger sua conta contra fraudes. Se você for vítima de um golpe do PIX por falha do banco, é direito seu contestar e pedir ressarcimento.</p>
+          </article>
+
+          <article class="right-item">
+            <h3>📖 4. Direito a Informações Claras e Acessíveis</h3>
+            <p>Sites, bancos e aplicativos são obrigados por lei a oferecer termos legíveis, claros e fáceis de entender, sem letras miúdas enganosas.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Central de Ajuda e Telefones -->
+      <section id="emergencia" class="content-block">
+        <h2 class="section-title">🆘 Central de Ajuda e Telefones Úteis</h2>
+
+        <div class="emergency-box" id="caixa-emergencia">
+          <p style="font-size: 1.1em; margin-bottom: 15px;"><strong>Caiu em um golpe ou está com suspeita? Respire e siga estes passos:</strong></p>
+          
+          <ol style="margin-left: 25px; margin-bottom: 25px;">
+            <li>Ligue para o seu <strong>Banco</strong> e peça o bloqueio preventivo das senhas e do aplicativo.</li>
+            <li>Avise um <strong>familiar de confiança</strong> ou amigo próximo para acompanhar você.</li>
+            <li>Faça um <strong>Boletim de Ocorrência (B.O.)</strong> na delegacia de polícia mais próxima.</li>
+          </ol>
+
+          <h3>📞 Ligue Diretamente para Pedir Ajuda:</h3>
+          
+          <div class="phone-list">
+            <div class="phone-item">
+              <strong>Polícia Militar</strong>
+              <small style="display:block;">Em caso de ameaça ou perigo</small>
+              <a href="tel:190" class="phone-number">📞 190</a>
+            </div>
+
+            <div class="phone-item">
+              <strong>Disque Direitos Humanos</strong>
+              <small style="display:block;">Proteção ao Idoso</small>
+              <a href="tel:100" class="phone-number">📞 100</a>
+            </div>
+
+            <div class="phone-item">
+              <strong>Central do Seu Banco</strong>
+              <small style="display:block;">Ligue no número que fica atrás do seu cartão</small>
+              <span class="phone-number" style="font-size: 1em; color: var(--text-main);">Verifique seu cartão</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p><strong>Guia de Segurança Digital para a Terceira Idade</strong></p>
+      <p>Iniciativa educativa gratuita para promover autonomia, dignidade e navegação sem medo.</p>
+      <p><small>Em caso de dúvidas financeiras, procure sempre a agência oficial do seu banco.</small></p>
+    </footer>
+
+  </div>
+
+  <!-- JavaScript no final do body -->
+  <script>
+    function ativarAlertaAjuda() {
+      const caixa = document.getElementById('caixa-emergencia');
+      if (caixa) {
+        caixa.classList.add('highlight-pulse');
+        setTimeout(() => {
+          caixa.classList.remove('highlight-pulse');
+        }, 4500);
+      }
+    }
+  </script>
+
+</body>
+</html>
